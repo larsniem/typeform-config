@@ -15,10 +15,11 @@
             </div>
             <div class="header-inner-container">
                 <div style="display: flex; align-content: center;font-size: 18px;">Press save to continue</div>
+                <div id="test-12345678">Test</div>
             </div>
 
         </header>
-        <script src="https://statics.teams.microsoft.com/sdk/v1.7.0/js/MicrosoftTeams.min.js"></script>
+        <!-- <script src="https://statics.teams.microsoft.com/sdk/v1.7.0/js/MicrosoftTeams.min.js"></script>
         <script>
             microsoftTeams.initialize();
             microsoftTeams.appInitialization.notifySuccess();
@@ -32,6 +33,10 @@
                 saveEvent.notifySuccess();
             });
             microsoftTeams.settings.setValidityState(true);
+        </script> -->
+        <script>
+            var element = window.document.getElementById("test-12345678")
+            element.innerText = "Nur ein Test."
         </script>
 </body>
 
