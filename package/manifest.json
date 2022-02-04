@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
   "manifestVersion": "1.11",
   "id": "844b63c8-4cc8-4033-ace7-4ce7816aa2f2",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "packageName": "typeform-eval",
   "developer": {
     "name": "lni",
@@ -25,7 +25,7 @@
   "accentColor": "#FFFFFF",
   "configurableTabs": [
     {
-      "configurationUrl": "https://niemczik.pages.rwth-aachen.de/typeform-config/config/teams.html",
+      "configurationUrl": "https://larsniemczik.de/typeform-config/public/config/teams.html",
       "canUpdateConfiguration": true,
       "scopes": [
         "team",
@@ -62,7 +62,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "https://niemczik.pages.rwth-aachen.de/typeform-config/config/*",
+    "*larsniemczik.de*",
     "https://ptwdarmstadt.typeform.com/to/*"
   ],
   "showLoadingIndicator": false
