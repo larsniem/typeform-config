@@ -21,8 +21,10 @@
     <script src="MicrosoftTeams.min.js"></script>
     <script>
       var input = document.getElementById("url");
+      console.log("Found URL Element");
 
       input.addEventListener("change", () => {
+        console.log("URL changed");
         var response = document.getElementById("response");
         response.innerHTML = "";
         response.className = "";
@@ -56,6 +58,8 @@
         response.className = "success"
         response.innerHTML = "OK, looks fine."
       })
+    
+      console.log("Registered Callback");
     </script>
   </body>
 </html>
