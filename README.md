@@ -12,6 +12,7 @@ https://www.youtube.com/watch?v=UeO2rEJeiNE
 
 # Example
 
+https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-sidepanel/nodejs
 https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/meetings-stage-view/nodejs/Manifest/manifest.json
 
 ---
