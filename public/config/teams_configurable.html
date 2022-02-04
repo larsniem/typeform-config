@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="GitLab Pages">
+    <!-- <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self' 'unsafe-inline' statics.teams.microsoft.com"> -->
+    <title>Plain HTML site using GitLab Pages</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <form>
+      <label for="url">Typeform URL</label>
+      <div id="typeform" class="stack-horizontal">
+        <input type="text" name="url" id="url">
+        <!-- <button id="submit">Submit</button> -->
+      </div>
+      <p id="response"></p>
+    </form>
+    <!-- <script src="https://statics.teams.microsoft.com/sdk/v1.7.0/js/MicrosoftTeams.min.js"></script> -->
+    <!-- <script src="MicrosoftTeams.min.js"></script> -->
+    <script>
+      var input = document.getElementById("url");
+      console.log("Found URL Element");
+
+      input.addEventListener("change", () => {
+        console.log("URL changed");
+        var response = document.getElementById("response");
+        response.innerHTML = "";
+        response.className = "";
+        var validDomain = "https://ptwdarmstadt.typeform.com/";
+  
+        if(!input.value.startsWith(validDomain)) {
+          response.className = "error"
+          response.innerHTML = `"${input.value}" is not a valid domain matching "${validDomain}"`
+          return
+        }
+        
+        // try {
+        //   microsoftTeams.initialize();
+        //   microsoftTeams.appInitialization.notifySuccess();
+        //   microsoftTeams.settings.registerOnSaveHandler(function (saveEvent) {
+        //       microsoftTeams.settings.setSettings({
+        //           entityID: "Side Panel App",
+        //           contentUrl: input.value,
+        //           suggestedTabName: "Side Panel App",
+        //           websiteUrl: input.value,
+        //       });
+        //       saveEvent.notifySuccess();
+        //   });
+        // microsoftTeams.settings.setValidityState(true);
+        // } catch (error) {
+        //   response.className = "error"
+        //   response.innerHTML = `${error}`
+        //   return
+        // }
+
+        response.className = "success"
+        response.innerHTML = "OK, looks fine."
+      })
+    
+      console.log("Registered Callback");
+    </script>
+  </body>
+</html>
