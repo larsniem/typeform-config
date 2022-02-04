@@ -1,5 +1,19 @@
 ![Build Status](https://gitlab.com/pages/plain-html/badges/master/build.svg)
 
+# Sources
+
+Getting started:
+
+https://www.youtube.com/watch?v=IkEHWsDr3_k
+
+Power Apps:
+
+https://www.youtube.com/watch?v=UeO2rEJeiNE
+
+# Example
+
+https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/meetings-stage-view/nodejs/Manifest/manifest.json
+
 ---
 
 Example plain HTML site using GitLab Pages.
@@ -13,10 +27,12 @@ documentation https://docs.gitlab.com/ce/user/project/pages/.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [GitLab CI](#gitlab-ci)
-- [GitLab User or Group Pages](#gitlab-user-or-group-pages)
-- [Did you fork this project?](#did-you-fork-this-project)
-- [Troubleshooting](#troubleshooting)
+- [Sources](#sources)
+- [Example](#example)
+  - [GitLab CI](#gitlab-ci)
+  - [GitLab User or Group Pages](#gitlab-user-or-group-pages)
+  - [Did you fork this project?](#did-you-fork-this-project)
+  - [Troubleshooting](#troubleshooting)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

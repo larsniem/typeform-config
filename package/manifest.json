@@ -62,7 +62,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "*larsniemczik.de*",
+    "*larsniemczik.de",
     "https://ptwdarmstadt.typeform.com/to/*"
   ],
   "showLoadingIndicator": false
