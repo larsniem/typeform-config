@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy"
+            content="default-src 'self'">
     <title>Token App Config page</title>
 </head>
 
@@ -21,7 +23,21 @@
             </div>
 
         </header>
-
+        <!-- <script src="https://statics.teams.microsoft.com/sdk/v1.7.0/js/MicrosoftTeams.min.js"></script>
+        <script>
+            microsoftTeams.initialize();
+            microsoftTeams.appInitialization.notifySuccess();
+            microsoftTeams.settings.registerOnSaveHandler(function (saveEvent) {
+                microsoftTeams.settings.setSettings({
+                    entityID: "Side Panel App",
+                    contentUrl: `${window.location.origin}/sidePanel.html`,
+                    suggestedTabName: "Side Panel App",
+                    websiteUrl: `${window.location.origin}/sidePanel.html`,
+                });
+                saveEvent.notifySuccess();
+            });
+            microsoftTeams.settings.setValidityState(true);
+        </script> -->
         <script>
             console.debug("Change element content")
             var element = window.document.getElementById("test-12345678");
