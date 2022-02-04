@@ -17,8 +17,8 @@
       </div>
       <p id="response"></p>
     </form>
-    <!-- <script src="https://statics.teams.microsoft.com/sdk/v1.7.0/js/MicrosoftTeams.min.js"></script>v -->
-    <script src="MicrosoftTeams.min.js"></script>
+    <!-- <script src="https://statics.teams.microsoft.com/sdk/v1.7.0/js/MicrosoftTeams.min.js"></script> -->
+    <!-- <script src="MicrosoftTeams.min.js"></script> -->
     <script>
       var input = document.getElementById("url");
       console.log("Found URL Element");
@@ -36,24 +36,24 @@
           return
         }
         
-        try {
-          microsoftTeams.initialize();
-          microsoftTeams.appInitialization.notifySuccess();
-          microsoftTeams.settings.registerOnSaveHandler(function (saveEvent) {
-              microsoftTeams.settings.setSettings({
-                  entityID: "Side Panel App",
-                  contentUrl: input.value,
-                  suggestedTabName: "Side Panel App",
-                  websiteUrl: input.value,
-              });
-              saveEvent.notifySuccess();
-          });
-        microsoftTeams.settings.setValidityState(true);
-        } catch (error) {
-          response.className = "error"
-          response.innerHTML = `${error}`
-          return
-        }
+        // try {
+        //   microsoftTeams.initialize();
+        //   microsoftTeams.appInitialization.notifySuccess();
+        //   microsoftTeams.settings.registerOnSaveHandler(function (saveEvent) {
+        //       microsoftTeams.settings.setSettings({
+        //           entityID: "Side Panel App",
+        //           contentUrl: input.value,
+        //           suggestedTabName: "Side Panel App",
+        //           websiteUrl: input.value,
+        //       });
+        //       saveEvent.notifySuccess();
+        //   });
+        // microsoftTeams.settings.setValidityState(true);
+        // } catch (error) {
+        //   response.className = "error"
+        //   response.innerHTML = `${error}`
+        //   return
+        // }
 
         response.className = "success"
         response.innerHTML = "OK, looks fine."
