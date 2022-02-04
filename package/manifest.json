@@ -1,9 +1,9 @@
 {
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
   "manifestVersion": "1.11",
-  "id": "72ab5988-7e54-4a3b-99f1-0e11ccbabc51",
-  "version": "0.0.4",
-  "packageName": "evaluation-industrial-hacking",
+  "id": "844b63c8-4cc8-4033-ace7-4ce7816aa2f2",
+  "version": "0.0.1",
+  "packageName": "typeform-eval",
   "developer": {
     "name": "lni",
     "websiteUrl": "https://ptwdarmstadt.typeform.com/",
@@ -11,12 +11,12 @@
     "termsOfUseUrl": "https://ptwdarmstadt.typeform.com/"
   },
   "name": {
-    "short": "Industrial Hacking",
-    "full": "Evaluation - Industrial Hacking"
+    "short": "Typeform Evaluations",
+    "full": "Evaluation - Typeform"
   },
   "description": {
-    "short": "Einbetten der Evaluation in Teams",
-    "full": "Einbetten der Evaluation in Teams"
+    "short": "Einbetten einer Evaluation in Teams",
+    "full": "Einbetten einer Evaluation in Teams"
   },
   "icons": {
     "outline": "icon-outline.png",
@@ -25,7 +25,7 @@
   "accentColor": "#FFFFFF",
   "configurableTabs": [
     {
-      "configurationUrl": "https://meeting-stage-view.azurewebsites.net/configure",
+      "configurationUrl": "https://niemczik.pages.rwth-aachen.de/typeform-config/config/teams.html",
       "canUpdateConfiguration": true,
       "scopes": [
         "team",
@@ -43,8 +43,8 @@
   ],
   "staticTabs": [
     {
-      "entityId": "72ab5988-7e54-4a3b-99f1-0e11ccbabc51",
-      "name": "Evaluation - Industrial Hacking",
+      "entityId": "5d244744-bd3f-4d60-8dfe-133b92260862",
+      "name": "Typefrom - Evaluation",
       "contentUrl": "https://ptwdarmstadt.typeform.com/to/vZlJwWe5",
       "scopes": [
         "personal"
@@ -62,7 +62,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "https://git.rwth-aachen.de/niemczik/typeform-config/*",
+    "https://niemczik.pages.rwth-aachen.de/typeform-config/config/*",
     "https://ptwdarmstadt.typeform.com/to/*"
   ],
   "showLoadingIndicator": false
