@@ -1,0 +1,69 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.11",
+  "id": "72ab5988-7e54-4a3b-99f1-0e11ccbabc51",
+  "version": "0.0.4",
+  "packageName": "evaluation-industrial-hacking",
+  "developer": {
+    "name": "lni",
+    "websiteUrl": "https://ptwdarmstadt.typeform.com/",
+    "privacyUrl": "https://ptwdarmstadt.typeform.com/",
+    "termsOfUseUrl": "https://ptwdarmstadt.typeform.com/"
+  },
+  "name": {
+    "short": "Industrial Hacking",
+    "full": "Evaluation - Industrial Hacking"
+  },
+  "description": {
+    "short": "Einbetten der Evaluation in Teams",
+    "full": "Einbetten der Evaluation in Teams"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#FFFFFF",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://meeting-stage-view.azurewebsites.net/configure",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team",
+        "groupchat"
+      ],
+      "context":[
+        "channelTab",
+        "privateChatTab",
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel",
+        "meetingStage"
+     ]
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "72ab5988-7e54-4a3b-99f1-0e11ccbabc51",
+      "name": "Evaluation - Industrial Hacking",
+      "contentUrl": "https://ptwdarmstadt.typeform.com/to/vZlJwWe5",
+      "scopes": [
+        "personal"
+      ],
+      "context": [
+        "personalTab"
+      ]
+    }
+  ],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "https://git.rwth-aachen.de/niemczik/typeform-config/*",
+    "https://ptwdarmstadt.typeform.com/to/*"
+  ],
+  "showLoadingIndicator": false
+}

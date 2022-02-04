@@ -1,24 +1,44 @@
+:root {
+  --error-dark: rgb(140, 33, 33);
+  --error-light: rgb(245, 158, 158);
+  --success-light: rgb(187, 245, 158);
+  --success-dark: rgb(37, 107, 31);
+}
+
+html {
+  height: 100%;
+}
+
 body {
   font-family: sans-serif;
   margin: auto;
-  max-width: 1280px;
+  max-width: 640px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar {
-  background-color: #313236;
-  border-radius: 2px;
-  max-width: 800px;
+* {width: 100%;}
+
+form * {
+  padding: 5px;
 }
 
-.navbar a {
-  color: #aaa;
-  display: inline-block;
-  font-size: 15px;
-  padding: 10px;
-  text-decoration: none;
+p {
+  padding: 5px;
+  margin-left: 5px;
 }
 
-.navbar a:hover {
-  color: #ffffff;
+.error {
+  background-color: var(--error-light);
+  color: var(--error-dark);
+  border: 1px solid var(--error-dark);
+}
+
+.success {
+  background-color: var(--success-light);
+  color: var(--success-dark);
+  border: 1px solid var(--success-dark);
 }
 
