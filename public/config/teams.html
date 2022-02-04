@@ -21,24 +21,11 @@
             </div>
 
         </header>
-        <!-- <script src="https://statics.teams.microsoft.com/sdk/v1.7.0/js/MicrosoftTeams.min.js"></script>
+
         <script>
-            microsoftTeams.initialize();
-            microsoftTeams.appInitialization.notifySuccess();
-            microsoftTeams.settings.registerOnSaveHandler(function (saveEvent) {
-                microsoftTeams.settings.setSettings({
-                    entityID: "Side Panel App",
-                    contentUrl: `${window.location.origin}/sidePanel.html`,
-                    suggestedTabName: "Side Panel App",
-                    websiteUrl: `${window.location.origin}/sidePanel.html`,
-                });
-                saveEvent.notifySuccess();
-            });
-            microsoftTeams.settings.setValidityState(true);
-        </script> -->
-        <script>
-            var element = window.document.getElementById("test-12345678")
-            element.innerText = "Nur ein Test."
+            console.debug("Change element content")
+            var element = window.document.getElementById("test-12345678");
+            element.innerText = "Nur ein Test.";
         </script>
 </body>
 
